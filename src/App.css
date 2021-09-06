@@ -1,0 +1,88 @@
+:root {
+  --blue-bg-color: #0d6efd;
+  --light-text-color: #ffffff;
+  --dark-bg-color: #343a40;
+}
+
+.blue-theme {
+  background-color: var(--blue-bg-color)!important;
+}
+
+.blue-theme-text {
+  color: var(--blue-bg-color);
+}
+
+/* dark theme */
+
+.dark-theme {
+  background-color: var(--dark-bg-color) !important;
+  border-color: transparent !important;
+}
+
+.dark-theme-text {
+  color: var(--dark-bg-color);
+}
+
+.App {
+  /* for spinner */
+  position: relative;
+}
+
+.fetching-spinner {
+  position: absolute;
+  right: 50vw;
+  top: 30vh;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--light-text-color) !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.card-description {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.card-description span {
+  margin-right: 20px;
+  font-weight: bold;
+}

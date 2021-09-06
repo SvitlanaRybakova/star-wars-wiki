@@ -1,0 +1,56 @@
+.toggleWrapper {
+  width: 250px;
+  height: 100px;
+  margin-left: auto;
+}
+
+.themeCheckbox {
+  display: none;
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 350px;
+  cursor: pointer;
+  transform: scale(0.4);
+  border: 0.5px solid grey;
+}
+
+.knob {
+  width: 93px;
+  height: 93px;
+  background-color: var(--blue-bg-color);
+  background-size: 700px;
+  position: relative;
+  top: 3px;
+  left: 3px;
+  border-radius: 290px;
+  transition: 0.4s ease left, 0.4s ease background-position;
+  z-index: 2;
+}
+
+.dark, .green {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #464040;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 160px;
+  z-index: 1;
+}
+
+.green {
+  margin-left: 20px;
+}
+
+.themeCheckbox:checked+.button .knob {
+  left: 153px;
+  /* background-position: -350px 0; */
+  background: var(--dark-bg-color);
+}
