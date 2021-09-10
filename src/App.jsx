@@ -12,6 +12,7 @@ import FilmPage from './pages/film';
 import HomeWorldPage from './pages/homeWorld'
 import ThemeToggle from './components/ThemeToggle';
 import GlobalFetchingSpinner from './components/GlobalFetchingSpinner'
+import LazyLoad from "./components/LazyLoad"
 
 function App() {
   
@@ -23,10 +24,14 @@ function App() {
 
       <div className="App">
         <GlobalFetchingSpinner />
-        
+
         <Switch>
           <Route exact path="/">
             <HomePage />
+          </Route>
+
+          <Route exact path="/lazy">
+            <LazyLoad />
           </Route>
 
           <Route exact path="/people">

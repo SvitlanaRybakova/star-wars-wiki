@@ -25,6 +25,9 @@ const Navigation = () => {
             <NavLink to="/people" className="nav-link">
               People
             </NavLink>
+            <NavLink to="/lazy" className="nav-link">
+              Lazy Load
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
